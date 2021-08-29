@@ -18,7 +18,7 @@
 
     <div v-if="this.successfulSearch">
       <div class="screen__view">
-        <img :src="urlImagen" alt=""/>
+        <img :src="urlImagen" alt="" />
       </div>
       <h2>Movimientos</h2>
       <ul>
@@ -35,7 +35,9 @@
       </ul>
     </div>
     <div v-if="this.errorSearch">
-      <h2 class="error-search">Ups, ese Pokemon no existe! <img src="./assets/nursejoy.gif" alt=""></h2>
+      <h2 class="error-search">
+        Ups, ese Pokemon no existe! <img src="./assets/nursejoy.gif" alt="" />
+      </h2>
     </div>
   </div>
 </template>
@@ -149,11 +151,7 @@ h2 {
   width: 100px;
   border: solid 1.5em rgb(208, 206, 206);
   border-radius: 5px;
-  background: linear-gradient(
-    0deg,
-    rgba(173, 255, 46, 1) 0%,
-    rgba(103, 252, 255, 1) 100%
-  );
+  background: linear-gradient(0deg, rgb(9, 181, 0) 0%, rgb(10, 80, 255) 100%);
   margin: 1em auto;
 }
 .error-search {
@@ -161,7 +159,7 @@ h2 {
   text-shadow: 2px 2px #8d7308;
   padding: 1em;
 }
-.error-search>img{
+.error-search > img {
   height: 70px;
 }
 </style>
